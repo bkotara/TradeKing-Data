@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Node.js version of TradeKing's API for streaming/getting stock data.",
   "main": "TradeKing.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bkotara/TradeKing-Data"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
