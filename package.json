@@ -1,0 +1,20 @@
+{
+  "name": "tradeking-data",
+  "version": "0.1.0",
+  "description": "Node.js version of TradeKing's API for streaming/getting stock data.",
+  "main": "TradeKing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "trade",
+    "tradeking",
+    "stocks"
+  ],
+  "author": "Brandon Kotara <brandon@kotara.com>",
+  "license": "ISC",
+  "dependencies": {
+    "oauth": "^0.9.13",
+    "underscore": "^1.8.3"
+  }
+}
