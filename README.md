@@ -9,8 +9,9 @@ Node.js version of TradeKing's API for streaming/getting stock data.
 
 ## Usage
 
-```
+```javascript
 	var tradeking = require('tradeking')
+
 	tradekingStream = new tradeking(
   	{
   		consumer_key: <key>, 
@@ -19,13 +20,14 @@ Node.js version of TradeKing's API for streaming/getting stock data.
 			access_secret: <secret>
 		}
 	);
+	
 	tradekingStream.openStream(["AAPL", "MSFT"], function(error, response) {
 		if(error) {
 			handle(error);
 			return;
 		}
 		handle(response);
-	})
+	});
 ```
 
 ## Release History
