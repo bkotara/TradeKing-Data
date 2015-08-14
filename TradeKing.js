@@ -6,12 +6,7 @@ var _ = require('underscore');
  * Credentials are required.
  **/
 var TradeKing = function(credentials, symbols, fields) {
-  try {
-    this.connection = new OAuth(null, null, credentials.consumer_key, credentials.consumer_secret, "1.0", null, "HMAC-SHA1");
-  } catch (error) {
-    throw new Error("Credentials are required: {consumer_key: <key>, consumer_secret: <secret>, 
-      access_token: <token>, access_secret: <secret>}")
-  }
+  this.connection = new OAuth(null, null, credentials.consumer_key, credentials.consumer_secret, "1.0", null, "HMAC-SHA1");
   this._credentials = credentials
   this.streamIsRunning = false;
   this.stream = null;
@@ -164,4 +159,4 @@ TradeKing.prototype.getStockData = function(symbols, fields, callback) {
   );
 };
 
-module.exports = TradeKing
+module.exports = TradeKing;
