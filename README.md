@@ -12,7 +12,7 @@ Node.js version of TradeKing's API for streaming/getting stock data.
 ```javascript
   var tradeking = require('tradeking-data')
 
-  tradekingStream = new tradeking(
+  var tradekingStream = new tradeking(
     {
       consumer_key: <key>, 
       consumer_secret: <secret>, 
